@@ -1,0 +1,10 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+D1,LED_D3.0mm,1,PWR_LED,
+D2,LED_D3.0mm,1,SB_LED,
+"H1, H2, H3, H4",MountingHole_3.2mm_M3_ISO7380_Pad,4,MountingHole_Pad,
+J1,IDC-Header_2x20_P2.54mm_Horizontal,1,Exp. Conn. A,
+J2,IDC-Header_2x17_P2.54mm_Horizontal,1,Exp. Conn. B,
+J3,IDC-Header_2x10_P2.54mm_Horizontal,1,Power,
+J4,PinHeader_2x06_P2.54mm_Horizontal,1,Front Panel Connector,
+J5,Molex_Mini-Fit_Jr_5569-20A1_2x10_P4.20mm_Horizontal,1,ATX-20,
+"R1, R2, R3",R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,3,470,

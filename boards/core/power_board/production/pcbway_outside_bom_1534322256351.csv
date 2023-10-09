@@ -1,0 +1,10 @@
+﻿designator,quantity,value,pack,mpn,mount_type
+D1,1,PWR_LED,LED_D3.0mm,,tht
+D2,1,SB_LED,LED_D3.0mm,,tht
+"H1, H2, H3, H4",4,MountingHole_Pad,MountingHole_3.2mm_M3_ISO7380_Pad,,tht
+J1,1,Exp. Conn. A,IDC-Header_2x20_P2.54mm_Horizontal,,tht
+J2,1,Exp. Conn. B,IDC-Header_2x17_P2.54mm_Horizontal,,tht
+J3,1,Power,IDC-Header_2x10_P2.54mm_Horizontal,,tht
+J4,1,Front Panel Connector,PinHeader_2x06_P2.54mm_Horizontal,,tht
+J5,1,ATX-20,Molex_Mini-Fit_Jr_5569-20A1_2x10_P4.20mm_Horizontal,,tht
+"R1, R2, R3",3,1k,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,,tht

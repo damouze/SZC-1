@@ -1,0 +1,38 @@
+Name     ppi_slot_select.dig ;
+PartNo   00 ;
+Date     22.09.2023 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g16v8a ;
+
+/* inputs */
+PIN 2 = A_3;
+PIN 3 = A_4;
+PIN 4 = A_5;
+PIN 5 = A_6;
+PIN 6 = A_7;
+PIN 7 = B_IORQ;
+PIN 8 = B_M1;
+
+/* outputs */
+PIN 12 = Y_0;
+PIN 13 = Y_1;
+PIN 14 = Y_2;
+PIN 15 = Y_3;
+PIN 16 = Y_4;
+PIN 17 = Y_5;
+PIN 18 = Y_6;
+PIN 19 = Y_7;
+
+/* combinatorial logic */
+Y_0 = A_3 # A_4 # A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_1 = !A_3 # A_4 # A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_2 = A_3 # !A_4 # A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_3 = !A_3 # !A_4 # A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_4 = A_3 # A_4 # !A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_5 = !A_3 # A_4 # !A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_6 = A_3 # !A_4 # !A_5 # A_6 # !A_7 # B_IORQ # !B_M1;
+Y_7 = !A_3 # !A_4 # !A_5 # A_6 # !A_7 # B_IORQ # !B_M1;

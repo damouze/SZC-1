@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "newlib_footprints")(type "KiCad")(uri "${KICAD_USER_LIB_DIR}/newlib/footprints.pretty")(options "")(descr ""))
+  (lib (name "snapeda_footprints")(type "KiCad")(uri "${KICAD_USER_LIB_DIR}/SnapEDA/footprints.pretty")(options "")(descr ""))
+)

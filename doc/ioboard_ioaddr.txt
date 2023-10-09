@@ -1,0 +1,9 @@
+SW 1.1-1.5: I/O BASE ADDRESS SELECTION
+
+Base address in increments of 8, selectable
+from 0x00 through 0xF8.
+
+Firmware default is 0x80.
+
+
+

@@ -1,0 +1,163 @@
+{COMPONENT C:\USERS\DMOUSE\OWNCLOUD\PROJECTS\KICAD\STACKABLE_Z80_COMPUTER\BOARDS\DIAG_BOARD\DIGITAL\CUPL_HEX_TO_7_SEGMENT\CUPL.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Wed Aug 23 19:14:44 2023 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P I_1 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P I_2 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P BI {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P I_3 {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P I_0 {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P SEG_E {Pt "I/O"}{Lq 0}{Ploc 280 20}}
+   {P SEG_D {Pt "I/O"}{Lq 0}{Ploc 280 40}}
+   {P SEG_C {Pt "I/O"}{Lq 0}{Ploc 280 60}}
+   {P SEG_B {Pt "I/O"}{Lq 0}{Ploc 280 80}}
+   {P SEG_A {Pt "I/O"}{Lq 0}{Ploc 280 100}}
+   {P SEG_G {Pt "I/O"}{Lq 0}{Ploc 280 120}}
+   {P SEG_F {Pt "I/O"}{Lq 0}{Ploc 280 140}}
+   {P DP {Pt "I/O"}{Lq 0}{Ploc 280 160}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 190 190}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 260 30}
+   {Pnl 260 50}
+   {Pnl 260 70}
+   {Pnl 260 90}
+   {Pnl 260 110}
+   {Pnl 260 130}
+   {Pnl 260 150}
+   {Pnl 260 170}
+
+   {Sd A 2 3 5 7 8 12 13 14 15 16 17 18 19}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 180 250 0}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 250 20 280 20}
+   {L 250 40 280 40}
+   {L 250 60 280 60}
+   {L 250 80 280 80}
+   {L 250 100 280 100}
+   {L 250 120 280 120}
+   {L 250 140 280 140}
+   {L 250 160 280 160}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "I_1" 140 100}
+   {T "I_2" 140 80}
+   {T "BI" 140 60}
+   {T "I_3" 140 40}
+   {T "I_0" 140 20}
+   [Tj "RC"]
+   {T "SEG_E" 240 20}
+   {T "SEG_D" 240 40}
+   {T "SEG_C" 240 60}
+   {T "SEG_B" 240 80}
+   {T "SEG_A" 240 100}
+   {T "SEG_G" 240 120}
+   {T "SEG_F" 240 140}
+   {T "DP" 240 160}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G16V8AS" 190 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\DMOUSE\OWNCLOUD\PROJECTS\KICAD\STACKABLE_Z80_COMPUTER\BOARDS\DIAG_BOARD\DIGITAL\CUPL_HEX_TO_7_SEGMENT\CUPL 190 180}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N I_1
+   }
+   {N I_2
+   }
+   {N BI
+   }
+   {N I_3
+   }
+   {N I_0
+   }
+   {N SEG_E
+   }
+   {N SEG_D
+   }
+   {N SEG_C
+   }
+   {N SEG_B
+   }
+   {N SEG_A
+   }
+   {N SEG_G
+   }
+   {N SEG_F
+   }
+   {N DP
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

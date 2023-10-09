@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="~{SUBSLTSL33}"/>
+    <variable name="~{SUBSLTSL31}"/>
+    <variable name="~{SUBSLTSL30}"/>
+  </variables>
+  <results>
+    <result>
+      <name>A17</name>
+      <values class="BoolTable">11111100</values>
+    </result>
+    <result>
+      <name>A16</name>
+      <values class="BoolTable">11110010</values>
+    </result>
+  </results>
+</truthTable>

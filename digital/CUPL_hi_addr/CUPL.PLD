@@ -1,0 +1,30 @@
+Name     hi_addr.dig ;
+PartNo   00 ;
+Date     23.07.2023 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g22v10 ;
+
+ar = 'b'0 ;
+sp = 'b'0 ;
+
+/* inputs */
+PIN 4 = A_10;
+PIN 5 = A_11;
+PIN 6 = A_12;
+PIN 7 = A_13;
+PIN 8 = A_14;
+PIN 9 = A_15;
+PIN 2 = A_8;
+PIN 3 = A_9;
+
+/* outputs */
+PIN 23 = HI_ADDR;
+PIN 22 = FFxx;
+
+/* combinatorial logic */
+FFxx = !A_10 # !A_11 # !A_12 # !A_13 # !A_14 # !A_15 # !A_8 # !A_9;
+HI_ADDR = !A_10 & !A_11 & !A_12 & !A_13 & !A_14 & !A_15 & !A_8 & !A_9;

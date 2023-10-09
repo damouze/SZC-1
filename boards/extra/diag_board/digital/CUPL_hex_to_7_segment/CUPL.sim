@@ -1,0 +1,70 @@
+%SIGNAL
+PIN   5 =  BI 
+PIN  19 =  DP 
+PIN   8 =  I_0 
+PIN   2 =  I_1 
+PIN   3 =  I_2 
+PIN   7 =  I_3 
+PIN  16 =  SEG_A 
+PIN  15 =  SEG_B 
+PIN  14 =  SEG_C 
+PIN  13 =  SEG_D 
+PIN  12 =  SEG_E 
+PIN  18 =  SEG_F 
+PIN  17 =  SEG_G 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+DP =>
+    1 
+
+SEG_A =>
+    I_0 & !I_1 & !I_2 & !I_3
+  # !I_0 & !I_1 & I_2 & !I_3
+  # I_0 & I_1 & !I_2 & I_3
+  # I_0 & !I_1 & I_2 & I_3
+  # !BI
+
+SEG_B =>
+    I_0 & !I_1 & I_2 & !I_3
+  # !I_0 & I_1 & I_2
+  # I_0 & I_1 & I_3
+  # !I_0 & I_2 & I_3
+  # !BI
+
+SEG_C =>
+    !I_0 & I_1 & !I_2 & !I_3
+  # !I_0 & I_2 & I_3
+  # I_1 & I_2 & I_3
+  # !BI
+
+SEG_D =>
+    I_0 & !I_1 & !I_2 & !I_3
+  # !I_0 & !I_1 & I_2 & !I_3
+  # !I_0 & I_1 & !I_2 & I_3
+  # I_0 & I_1 & I_2
+  # !BI
+
+SEG_E =>
+    I_0 & !I_1 & !I_2
+  # I_0 & !I_3
+  # !I_1 & I_2 & !I_3
+  # !BI
+
+SEG_F =>
+    I_0 & !I_1 & I_2 & I_3
+  # I_0 & I_1 & !I_3
+  # I_0 & !I_2 & !I_3
+  # I_1 & !I_2 & !I_3
+  # !BI
+
+SEG_G =>
+    I_0 & !I_1 & !I_2 & !I_3
+  # I_0 & I_1 & I_2 & !I_3
+  # !I_0 & !I_1 & I_2 & I_3
+  # !BI
+
+%END

@@ -1,0 +1,201 @@
+
+*******************************************************************************
+                             hex_to_7_segment.dig
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g16v8as  Library DLIB-h-40-2
+Created         Wed Aug 23 19:14:44 2023
+Name            hex_to_7_segment.dig 
+Partno          00 
+Revision        01 
+Date            23.08.2023 
+Designer        dmouse 
+Company         unknown 
+Assembly        None 
+Location        unknown 
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+DP =>
+    1 
+
+SEG_A =>
+    I_0 & !I_1 & !I_2 & !I_3
+  # !I_0 & !I_1 & I_2 & !I_3
+  # I_0 & I_1 & !I_2 & I_3
+  # I_0 & !I_1 & I_2 & I_3
+  # !BI
+
+SEG_B =>
+    I_0 & !I_1 & I_2 & !I_3
+  # !I_0 & I_1 & I_2
+  # I_0 & I_1 & I_3
+  # !I_0 & I_2 & I_3
+  # !BI
+
+SEG_C =>
+    !I_0 & I_1 & !I_2 & !I_3
+  # !I_0 & I_2 & I_3
+  # I_1 & I_2 & I_3
+  # !BI
+
+SEG_D =>
+    I_0 & !I_1 & !I_2 & !I_3
+  # !I_0 & !I_1 & I_2 & !I_3
+  # !I_0 & I_1 & !I_2 & I_3
+  # I_0 & I_1 & I_2
+  # !BI
+
+SEG_E =>
+    I_0 & !I_1 & !I_2
+  # I_0 & !I_3
+  # !I_1 & I_2 & !I_3
+  # !BI
+
+SEG_F =>
+    I_0 & !I_1 & I_2 & I_3
+  # I_0 & I_1 & !I_3
+  # I_0 & !I_2 & !I_3
+  # I_1 & !I_2 & !I_3
+  # !BI
+
+SEG_G =>
+    I_0 & !I_1 & !I_2 & !I_3
+  # I_0 & I_1 & I_2 & !I_3
+  # !I_0 & !I_1 & I_2 & I_3
+  # !BI
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    BI                          5        V        -       -       -     
+    DP                          19       V        1       8       1     
+    I_0                         8        V        -       -       -     
+    I_1                         2        V        -       -       -     
+    I_2                         3        V        -       -       -     
+    I_3                         7        V        -       -       -     
+    SEG_A                       16       V        5       8       1     
+    SEG_B                       15       V        5       8       1     
+    SEG_C                       14       V        4       8       1     
+    SEG_D                       13       V        5       8       1     
+    SEG_E                       12       V        4       8       1     
+    SEG_F                       18       V        5       8       1     
+    SEG_G                       17       V        4       8       1     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
+
+===============================================================================
+                                   Fuse Plot
+===============================================================================
+
+Syn   02192 - Ac0   02193 x 
+
+Pin #19  02048  Pol -  02120  Ac1 x 
+ 00000 -------------------------------- 
+ 00032 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00064 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00096 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00128 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00160 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00192 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00224 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #18  02049  Pol -  02121  Ac1 x 
+ 00256 -x--x---------------x---x------- 
+ 00288 x--------------------x--x------- 
+ 00320 -----x---------------x--x------- 
+ 00352 x----x---------------x---------- 
+ 00384 -------------x------------------ 
+ 00416 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00448 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00480 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #17  02050  Pol -  02122  Ac1 x 
+ 00512 -x---x---------------x--x------- 
+ 00544 x---x----------------x--x------- 
+ 00576 -x--x---------------x----x------ 
+ 00608 -------------x------------------ 
+ 00640 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00672 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00704 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00736 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #16  02051  Pol -  02123  Ac1 x 
+ 00768 -x---x---------------x--x------- 
+ 00800 -x--x----------------x---x------ 
+ 00832 x----x--------------x---x------- 
+ 00864 -x--x---------------x---x------- 
+ 00896 -------------x------------------ 
+ 00928 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00960 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00992 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #15  02052  Pol -  02124  Ac1 x 
+ 01024 -x--x----------------x--x------- 
+ 01056 x---x--------------------x------ 
+ 01088 x-------------------x---x------- 
+ 01120 ----x---------------x----x------ 
+ 01152 -------------x------------------ 
+ 01184 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01216 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01248 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #14  02053  Pol -  02125  Ac1 x 
+ 01280 x----x---------------x---x------ 
+ 01312 ----x---------------x----x------ 
+ 01344 x---x---------------x----------- 
+ 01376 -------------x------------------ 
+ 01408 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01440 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01472 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01504 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #13  02054  Pol -  02126  Ac1 x 
+ 01536 -x---x---------------x--x------- 
+ 01568 -x--x----------------x---x------ 
+ 01600 x----x--------------x----x------ 
+ 01632 x---x-------------------x------- 
+ 01664 -------------x------------------ 
+ 01696 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01728 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01760 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #12  02055  Pol -  02127  Ac1 x 
+ 01792 -x---x------------------x------- 
+ 01824 ---------------------x--x------- 
+ 01856 -x--x----------------x---------- 
+ 01888 -------------x------------------ 
+ 01920 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01952 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 01984 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 02016 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+
+LEGEND    X : fuse not blown 
+          - : fuse blown 
+
+===============================================================================
+                                 Chip Diagram
+===============================================================================
+
+                               ______________
+                              |hex_to_7_segme|
+                          x---|1           20|---x Vcc                      
+                      I_1 x---|2           19|---x DP                       
+                      I_2 x---|3           18|---x SEG_F                    
+                          x---|4           17|---x SEG_G                    
+                       BI x---|5           16|---x SEG_A                    
+                          x---|6           15|---x SEG_B                    
+                      I_3 x---|7           14|---x SEG_C                    
+                      I_0 x---|8           13|---x SEG_D                    
+                          x---|9           12|---x SEG_E                    
+                      GND x---|10          11|---x                          
+                              |______________|
+

@@ -1,0 +1,39 @@
+Name     chip_selects.dig ;
+PartNo   00 ;
+Date     17.07.2023 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g22v10 ;
+
+ar = 'b'0 ;
+sp = 'b'0 ;
+
+/* inputs */
+PIN 7 = A_0;
+PIN 8 = A_1;
+PIN 9 = A_2;
+PIN 10 = A_3;
+PIN 11 = A_4;
+PIN 13 = A_5;
+PIN 6 = CS;
+PIN 5 = IORQ;
+PIN 3 = M1;
+PIN 4 = MREQ;
+PIN 2 = RESET1;
+
+/* outputs */
+PIN 23 = RESET;
+PIN 22 = PPI_CS;
+PIN 21 = UART_CS;
+PIN 20 = IO_OP;
+PIN 19 = MEM_OP;
+
+/* combinatorial logic */
+IO_OP = IORQ # !M1 # !MREQ;
+MEM_OP = !IORQ # MREQ;
+PPI_CS = A_0 # !A_1 # A_2 # !A_3 # A_4 # !A_5 # !CS # IORQ # !M1 # !MREQ;
+RESET = !RESET1;
+UART_CS = A_1 # A_2 # A_3 # A_4 # !A_5 # !CS # IORQ # !M1 # !MREQ;

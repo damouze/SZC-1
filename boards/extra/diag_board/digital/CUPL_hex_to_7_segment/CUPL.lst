@@ -1,0 +1,55 @@
+LISTING FOR LOGIC DESCRIPTION FILE: CUPL.pld                         Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Wed Aug 23 19:14:44 2023
+
+  1:Name     hex_to_7_segment.dig ;
+  2:PartNo   00 ;
+  3:Date     23.08.2023 ;
+  4:Revision 01 ;
+  5:Designer dmouse ;
+  6:Company  unknown ;
+  7:Assembly None ;
+  8:Location unknown ;
+  9:Device   g16v8a ;
+ 10:
+ 11:/* inputs */
+ 12:PIN 5 = BI;
+ 13:PIN 8 = I_0;
+ 14:PIN 2 = I_1;
+ 15:PIN 3 = I_2;
+ 16:PIN 7 = I_3;
+ 17:
+ 18:/* outputs */
+ 19:PIN 16 = SEG_A;
+ 20:PIN 15 = SEG_B;
+ 21:PIN 14 = SEG_C;
+ 22:PIN 13 = SEG_D;
+ 23:PIN 12 = SEG_E;
+ 24:PIN 18 = SEG_F;
+ 25:PIN 17 = SEG_G;
+ 26:PIN 19 = DP;
+ 27:
+ 28:/* combinatorial logic */
+ 29:DP = 'b'1;
+ 30:SEG_A = (I_0 & !I_1 & !I_2 & !I_3) # (!I_0 & !I_1 & I_2 & !I_3) # (I_0 & I_1 & !I_2 & I_3) 
+ 31:     # (I_0 & !I_1 & I_2 & I_3) # !BI;
+ 32:SEG_B = (I_0 & !I_1 & I_2 & !I_3) # (!I_0 & I_1 & I_2) # (I_0 & I_1 & I_3) # (!I_0 & I_2 & I_3) 
+ 33:     # !BI;
+ 34:SEG_C = (!I_0 & I_1 & !I_2 & !I_3) # (!I_0 & I_2 & I_3) # (I_1 & I_2 & I_3) # !BI;
+ 35:SEG_D = (I_0 & !I_1 & !I_2 & !I_3) # (!I_0 & !I_1 & I_2 & !I_3) # (!I_0 & I_1 & !I_2 & I_3) 
+ 36:     # (I_0 & I_1 & I_2) # !BI;
+ 37:SEG_E = (I_0 & !I_1 & !I_2) # (I_0 & !I_3) # (!I_1 & I_2 & !I_3) # !BI;
+ 38:SEG_F = (I_0 & !I_1 & I_2 & I_3) # (I_0 & I_1 & !I_3) # (I_0 & !I_2 & !I_3) # (I_1 & !I_2 & !I_3) 
+ 39:     # !BI;
+ 40:SEG_G = (I_0 & !I_1 & !I_2 & !I_3) # (I_0 & I_1 & I_2 & !I_3) # (!I_0 & !I_1 & I_2 & I_3) 
+ 41:     # !BI;
+ 42:
+ 43:
+
+
+
+Jedec Fuse Checksum       (8752)
+Jedec Transmit Checksum   (769d)
