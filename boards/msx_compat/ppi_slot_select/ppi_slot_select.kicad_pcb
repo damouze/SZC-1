@@ -6,7 +6,7 @@
 
   (paper "A4")
   (title_block
-    (title "Simple Z80 board with priority IM2 interrupt decoding")
+    (title "MSX standard inspired slot selection board.")
     (date "2023-08-31")
     (rev "1.1")
   )
