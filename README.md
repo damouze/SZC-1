@@ -88,6 +88,7 @@ The repository is laid out as follows:
 	- ppi_slot_select_expanded: as ppi_slot_select, but also contains an expanded slot select register.
 - digital contains some experiments made in Digital to work out some concepts
 - doc: contains documentation and other reference material
+- ibom: interactive BOMs for the boards
 - pics: contains 3D renderings of most of the boards
 - verilog: contains verilog output from Digital for the experiments in the *digital* folder.
 
