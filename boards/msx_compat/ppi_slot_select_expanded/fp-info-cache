@@ -1,4 +1,4 @@
-21953142120886493
+21954840000730959
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -90747,48 +90747,55 @@ varistor
 0
 2
 2
-newlib
+footprints
 7-5530843-5
 
 
 0
 12
 12
-newlib
+footprints
 5530843-5
 
 
 0
 50
 50
-newlib
+footprints
 BUS_ISA_8_BIT
 AT ISA 16 bits Bus Edge Connector
 BUS ISA AT Edge connector
 0
 62
 62
-newlib
+footprints
 CONN62_6-5530843-5_TEC
 
 6-5530843-5 
 0
 62
 62
-newlib
+footprints
 ISA_CARD_EDGE_CONNECTOR_8BIT_Rev1
 ISA 8 bits Bus Edge Connector (PC/XT) Rev 1 added rectangular soldermask across all pins and added connector width guide on Eco2 layer
 BUS ISA XT Edge connector PC/XT
 0
 62
 62
-newlib
+footprints
 PC_BRACKET_ISA_KEYSTONE_9202_Rev1
 Mounting Hole 3.2mm, M3
 mounting hole 3.2mm m3
 0
 2
 2
+footprints
+TE_171826-4
+
+
+0
+4
+4
 newlib_connector_audio
 Jack_3.5mm_CUI_SJ1-3535NG_Horizontal
 TRS 3.5mm, horizontal, through-hole, with switch, https://www.cui.com/product/resource/sj1-353xng.pdf
