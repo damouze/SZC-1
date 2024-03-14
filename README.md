@@ -49,16 +49,16 @@ interrupt lines (/INT0-/INT7), as well as 8 more address lines (MA14-A21). Pins 
 or in other words, user defined. 
 
 Expansion Connector C contains the extra bus signals provided by the Z80 CPU board with
-an extended bus (cpu_board_ext_bus). It provides 5 new signals: /IOR, /IOW, /MEMR, /MEMW
+an extended bus (cpu_board_ext_bus+v2). It provides 5 new signals: /IOR, /IOW, /MEMR, /MEMW
 and /INTA. These can be used to simplify the designs of future boards. In addition they
-also provide the necessary signals for communication with an Intel 8259 Programmable
+also provide the necessary signals for interfacing with an Intel 8259 Programmable
 Interrupt Controller. 
 
-The Power Connector is standardized around the 20-pins ATX power supply connector, but
-with an IDC header instead of a regular ATX power supply connector. The rationale behind
-this is that power to the CPU board is is delivered from the power supply through a power
-board, which in turn distributes power to the CPU board through the aforementioned
-2x10 pins IDC connector.
+The Power Connector is standardized around the 20-pins ATX power supply connector, and indeed
+the Power Board does contain one, but power to the CPU board is provided through an IDC header.
+The rationale behind this is that power to the CPU board is is delivered from the power supply 
+through the power board, which has a front panel header and which in turn distributes power to
+the CPU board through the aforementioned 2x10 pins IDC header.
 
 Power delivery to all other boards is standardized around the old-fashioned floppy 
 connector (TE_171826-4). Only +12V and +5V are available. +5VSB (standby power) and 3.3V
@@ -87,10 +87,12 @@ Expansion Bus B is not used in this configuration.
 - Power board
 
 This will provide a slightly more advanced Z80 system with serial I/O support. The serial I/O
-board should be configured to use any of the /INTx interrupt lines and use 0x80 as its I/O
-base address. The ROM/RAM board should be configured for Bank 0. Segments 0-
+board should be configured to use /INT as its interrupt line and use 0x80 as its I/O
+base address. The ROM/RAM board should be configured for Bank 0. 
 
-This system will have 512kB of Flash ROM
+This system will have 512kB of Flash ROM and 1536kB of SRAM. Segments 0-31 will be ROM, 
+segments 32-127 will be RAM. Segments 128-255 will be available for add-on boards with
+its own ROM or RAM or which use memory mapped I/O. 
 
 ## Repository layout
  
@@ -116,9 +118,11 @@ The repository is laid out as follows:
     - msx_rom_ram_board: a board with 512kB flash ROM and 1MB SRAM (requires the ppi_slot_select_expanded board)
 	- ppi_slot_select: a board that provides MSX compatible slot select registers as well as 16 GPIO pins.
 	- ppi_slot_select_expanded: as ppi_slot_select, but also contains an expanded slot select register.
-- digital contains some experiments made in Digital to work out some concepts
+- digital contains experiments made in Digital to work out some concepts
 - doc: contains documentation and other reference material
 - ibom: interactive BOMs for the boards
-- pics: contains 3D renderings of most of the boards
+- pics: 
+    - renderings: contains 3D renderings of most of the boards
+	- photos: contains photos of PCBs and assembled boards
 - verilog: contains verilog output from Digital for the experiments in the *digital* folder.
 
