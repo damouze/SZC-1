@@ -1,0 +1,127 @@
+
+(rules PCB cpu_board_ext_bus_v2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 444)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:600_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:600_um" "Via[0-1]_800:600_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:600_um-kicad_default" "Via[0-1]_800:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:400_um-Power" "Via[0-1]_600:400_um" Power
+  )
+  (via 
+    "Via[0-1]_800:600_um-Power" "Via[0-1]_800:600_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:600_um-Power"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-A)" "/~{RESET_SW}" /~{NMI} /~{RESET} "/BUS_CLK" "/CPU_CLK" "/~{B_M1}" "/~{B_IORQ}"
+    "/~{B_MREQ}" "/~{B_WR}" "/~{B_RD}" /~{WAIT} "/~{B_RFSH}" "/M_A21" "/M_A20" "/M_A19"
+    "/M_A18" "/M_A17" "/M_A16" /USER2 /USER1 /USER0 "/Clock & Reset circuit/EXT_CLK" "/Clock & Reset circuit/INT_CLK"
+    "/B_D7" "/PWR_OK" /MCU/~{HALT} /MCU/~{MREQ} /MCU/~{IORQ} /MCU/~{RD} /MCU/~{WR} /MCU/~{M1}
+    /MCU/~{RFSH} /~{INTA} /MCU/~{BUSACK} /MCU/BUSACK "/B_D6" "/B_D5" "/B_D4" "/B_D3"
+    "/B_D2" "/B_D1" "/B_D0" "/B_A15" "/B_A14" "/B_A13" "/B_A12" /~{INT7}
+    "/B_A11" /~{INT6} "/B_A10" /~{INT5} "/B_A9" /~{INT4} "/B_A8" /~{INT3}
+    "/B_A7" /~{INT2} "/B_A6" "/B_A5" "/B_A4" "/B_A3" "/B_A2" "/B_A1"
+    "/B_A0" /~{INT0} /~{INT1} /USER15 /MCU/D4 /MCU/D3 /MCU/D5 /MCU/D6
+    /MCU/D2 /MCU/D7 /MCU/D0 /MCU/D1 /~{INT} /MCU/A11 /MCU/A12 /MCU/A13
+    /MCU/A14 /MCU/A15 /MCU/A0 /MCU/A1 /MCU/A2 /MCU/A3 /MCU/A4 /MCU/A5
+    /MCU/A6 /MCU/A7 /MCU/A8 /MCU/A9 /MCU/A10 "unconnected-(X1-EN-Pad1)" "/~{B_BUSACK}" /~{MEMR}
+    /USER14 /USER13 /USER12 /USER11 /USER10 /USER9 /USER8 /~{MEMW}
+    "/M_A15" /~{IOR} "/M_A14" /~{IOW} "/~{PS_ON}" "/~{CPU_INT}" "/~{B_HALT}" /~{BUSREQ}
+    /~{RESET0} "unconnected-(J4-Pin_2-Pad2)" "unconnected-(U1-NC-Pad6)" "unconnected-(U1-NC-Pad12)" "/MCU/~{DBUS_DIR}" /USER7 /USER6 /USER5
+    /USER4 /USER3 "unconnected-(U1-NC-Pad24)" "unconnected-(U1-NC-Pad25)" "unconnected-(U2-I1{slash}CLK-Pad1)" "unconnected-(U2-I10{slash}~{OE}-Pad11)" "/Memory Mapper/~{MMU_CS}" "unconnected-(U8-TDI{slash}I{slash}O-Pad7)"
+    "unconnected-(U8-I{slash}O{slash}TCK-Pad32)" "unconnected-(U8-I{slash}O{slash}TDO-Pad38)"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    /GND /+5V "/-12V" /+12V /+3.3V /+5V2 /+5VSB /+5V4
+    /+5V3 /+3.3V2 /+3.3V3
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

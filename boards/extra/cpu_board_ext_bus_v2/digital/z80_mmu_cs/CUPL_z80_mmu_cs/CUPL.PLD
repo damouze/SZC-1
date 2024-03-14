@@ -1,0 +1,23 @@
+Name     z80_mmu_cs.dig ;
+PartNo   00 ;
+Date     24.02.2024 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g16v8a ;
+
+/* inputs */
+PIN 2 = A2;
+PIN 3 = A3;
+PIN 4 = A4;
+PIN 5 = A5;
+PIN 6 = A6;
+PIN 7 = A7;
+
+/* outputs */
+PIN 12 = MMU_CS;
+
+/* combinatorial logic */
+MMU_CS = !A2 # !A3 # !A4 # !A5 # !A6 # !A7;

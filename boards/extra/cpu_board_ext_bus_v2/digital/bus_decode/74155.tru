@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="1~{G}"/>
+    <variable name="1C"/>
+    <variable name="B"/>
+    <variable name="A"/>
+  </variables>
+  <results>
+    <result>
+      <name>1Y0</name>
+      <values class="BoolTable">1111011111111111</values>
+    </result>
+    <result>
+      <name>1Y1</name>
+      <values class="BoolTable">1111101111111111</values>
+    </result>
+    <result>
+      <name>1Y2</name>
+      <values class="BoolTable">1111110111111111</values>
+    </result>
+    <result>
+      <name>1Y3</name>
+      <values class="BoolTable">1111111011111111</values>
+    </result>
+  </results>
+</truthTable>

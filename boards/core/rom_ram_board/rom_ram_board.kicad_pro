@@ -449,28 +449,7 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power",
-        "pattern": "/GND"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "/+5V*"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/+3.3V*"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/+12V*"
-      },
-      {
-        "netclass": "Default",
-        "pattern": "/-12V*"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {

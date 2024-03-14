@@ -28,9 +28,10 @@ In principle, the Stackable Z80 computer is more an idea than an actual design. 
 it is built around the following concepts:
 
 - The board dimensions are 95.25mm x 95.25mm (3.75" x 3.75")
-- There are three main connectors:
+- There are four main connectors:
     - Expansion Connector A (2x20 pins, IDC)
 	- Expansion Connector B (2x17 pins, IDC)
+	- Expansion Connector C (2x4 pins, IDC)
 	- Power Connector (2x10 pins, IDC)
 - Each board can be stacked on top of another through the use of standoffs
 
@@ -47,10 +48,21 @@ interrupt lines (/INT0-/INT7), as well as 8 more address lines (MA14-A21). Pins 
 34 are connected to ground. The remaining pins, all even, are defined as USER0-USER15,
 or in other words, user defined. 
 
+Expansion Connector C contains the extra bus signals provided by the Z80 CPU board with
+an extended bus (cpu_board_ext_bus). It provides 5 new signals: /IOR, /IOW, /MEMR, /MEMW
+and /INTA. These can be used to simplify the designs of future boards. In addition they
+also provide the necessary signals for communication with an Intel 8259 Programmable
+Interrupt Controller. 
+
 The Power Connector is standardized around the 20-pins ATX power supply connector, but
 with an IDC header instead of a regular ATX power supply connector. The rationale behind
-this is that power is delivered from the power supply through a power board, which in
-turn distributes power to all the other boards through the 2x10 pins IDC connector.
+this is that power to the CPU board is is delivered from the power supply through a power
+board, which in turn distributes power to the CPU board through the aforementioned
+2x10 pins IDC connector.
+
+Power delivery to all other boards is standardized around the old-fashioned floppy 
+connector (TE_171826-4). Only +12V and +5V are available. +5VSB (standby power) and 3.3V
+should be delivered separately, for instance from the power board.
 
 ## Minimal configuration (top to bottom)
 
@@ -60,12 +72,25 @@ turn distributes power to all the other boards through the 2x10 pins IDC connect
 - Power board
 
 This will provide a basic Z80 system with serial I/O support. The serial I/O board should
-be configured to use /INT as its interrupt line and to use 0x80 as its I/O base address.
+be configured to use /INT as its interrupt line and use 0x80 as its I/O base address.
 
 The system will have 32kB of ROM, as well as 96kB of RAM, able to be paged in or out of the
 Z80 address space as needed in segments of 16kB. 
 
 Expansion Bus B is not used in this configuration.
+
+## A more advance configuration (top to bottom)
+
+- Serial I/O board
+- ROM/RAM board v2
+- CPU board with expansion Connector C
+- Power board
+
+This will provide a slightly more advanced Z80 system with serial I/O support. The serial I/O
+board should be configured to use any of the /INTx interrupt lines and use 0x80 as its I/O
+base address. The ROM/RAM board should be configured for Bank 0. Segments 0-
+
+This system will have 512kB of Flash ROM
 
 ## Repository layout
  
@@ -77,9 +102,14 @@ The repository is laid out as follows:
 	- rom_ram_board: a board that provides 32kB of ROM and 96kB of RAM, able to be paged in and out as needed.
 	- serial_io_board: a board that provides a RS232 interface for outside communication.
 - boards/extra contains some extra board designs
+    - 8259_pic_board: 8259 Interrupt Controller Board for the SZC-1; requires Expansion Connector C.
+    - audio_board: SSG Audio Board for the SZC-1, providing SSG sound support.
+	- cpu_board_ext_bus_v2: new and improved CPU board providing Expansion Connector C and an on-board memory mapper.
     - diag_board: a basic diagnostics board, providing a 2-digit 7-segment display accessible through I/O port 0xb8.
+	- ide_board: IDE Board for the SZC-1, inspired by the Beer IDE interface.
 	- mmu_board: a preliminary design for a Z80 MMU built around a ATF1502/1504 CPLD (*work in progress*)
 	- rom_ram_board_2MB: a board that provides 512kB of flash ROM and 1536kB of RAM, able to be paged in and out as needed.
+	- rom_ram_board_v2: another board that provides 512kB of flash ROM and 1536kB of RAM; requires Expansion Connector C.
 	- simple_z80: the original Z80 board, CPU, buffers/latches and a LS74xx based IM2 interrupt controller.
 - boards/msx_compat contains boards to provide MSX compatibility (*work in progress*)
     - msx_rom_board: a board that houses to 32kB EEPROM sockets for MSX compatible ROMs (requires the ppi_slot_select_expanded board)
