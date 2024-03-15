@@ -4,6 +4,10 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2024-03-15")
+  )
+
   (lib_symbols
     (symbol "74xx:74LS30" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 1.27 0)
@@ -208,13 +212,13 @@
       )
     )
     (symbol "own_device:ATF1504AS-7JX44" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "U" (at -12.065 32.385 0)
-        (effects (font (size 1.524 1.524)))
+      (property "Reference" "U8" (at 9.3362 33.655 0)
+        (effects (font (size 1.524 1.524)) (justify left))
       )
-      (property "Value" "ATF1502AS-7JX44" (at 19.685 31.75 0)
-        (effects (font (size 1.524 1.524)))
+      (property "Value" "ATF1502AS-7JX44" (at 9.3362 31.115 0)
+        (effects (font (size 1.524 1.524)) (justify left))
       )
-      (property "Footprint" "44J_MCH" (at 0 0.381 90)
+      (property "Footprint" "Package_LCC:PLCC-44_THT-Socket" (at 0 0.381 90)
         (effects (font (size 1.524 1.524)) hide)
       )
       (property "Datasheet" "" (at -20.955 21.59 0)
