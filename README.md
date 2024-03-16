@@ -111,6 +111,7 @@ The repository is laid out as follows:
 	- ide_board: IDE Board for the SZC-1, inspired by the Beer IDE interface.
 	- mmu_board: a preliminary design for a Z80 MMU built around a ATF1502/1504 CPLD (*work in progress*)
 	- rom_ram_board_2MB: a board that provides 512kB of flash ROM and 1536kB of RAM, able to be paged in and out as needed.
+	- rom_ram_board_128kB_v2: another board that provides 32kB of EEPROM and 96kB of RAM; requires Expansion Connector C.
 	- rom_ram_board_v2: another board that provides 512kB of flash ROM and 1536kB of RAM; requires Expansion Connector C.
 	- simple_z80: the original Z80 board, CPU, buffers/latches and a LS74xx based IM2 interrupt controller.
 - boards/msx_compat contains boards to provide MSX compatibility (*work in progress*)
