@@ -1,0 +1,39 @@
+Name     bus_decode.dig ;
+PartNo   00 ;
+Date     23.02.2024 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g16v8a ;
+
+/* inputs */
+PIN 2 = BUSACK1;
+PIN 3 = IORQ;
+PIN 4 = M1;
+PIN 5 = MREQ;
+PIN 8 = PWR_OK;
+PIN 6 = RD;
+PIN 9 = RESET0;
+PIN 7 = WR;
+
+/* outputs */
+PIN 12 = INTA;
+PIN 13 = IOR;
+PIN 14 = IOW;
+PIN 15 = MEMR;
+PIN 16 = MEMW;
+PIN 17 = BUSACK;
+PIN 18 = DBUS_DIR;
+PIN 19 = RESET;
+
+/* combinatorial logic */
+BUSACK = !BUSACK1;
+DBUS_DIR = (IORQ & MREQ) # (M1 & MREQ);
+INTA = IORQ # M1;
+IOR = (PWR_OK & !M1 & RESET0) # IORQ # RD # !WR;
+IOW = IORQ # !RD # WR;
+MEMR = (!IORQ & !M1) # MREQ # RD # !WR;
+MEMW = (!IORQ & !M1) # MREQ # !RD # WR;
+RESET = PWR_OK & RESET0;

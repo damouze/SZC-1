@@ -6,8 +6,8 @@
 
   (title_block
     (title "Simple Z80 board with priority IM2 interrupt decoding")
-    (date "2023-09-05")
-    (rev "2.3")
+    (date "2024-01-21")
+    (rev "2.4")
   )
 
   (lib_symbols

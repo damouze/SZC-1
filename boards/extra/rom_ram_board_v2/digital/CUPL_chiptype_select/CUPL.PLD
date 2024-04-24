@@ -1,0 +1,32 @@
+Name     chiptype_select.dig ;
+PartNo   00 ;
+Date     08.03.2024 ;
+Revision 01 ;
+Designer dmouse ;
+Company  unknown ;
+Assembly None ;
+Location unknown ;
+Device   g16v8a ;
+
+/* inputs */
+PIN 2 = A14;
+PIN 3 = A15;
+PIN 5 = CHIPTYPE_1;
+PIN 6 = CHIPTYPE_2;
+PIN 4 = WE;
+
+/* outputs */
+PIN 12 = PIN3_CHIP1;
+PIN 15 = PIN3_CHIP2;
+PIN 13 = PIN29_CHIP0;
+PIN 16 = PIN29_CHIP1;
+PIN 14 = PIN31_CHIP0;
+PIN 17 = PIN31_CHIP1;
+
+/* combinatorial logic */
+PIN29_CHIP0 = (A14 & CHIPTYPE_1) # (!CHIPTYPE_1 & WE);
+PIN29_CHIP1 = (A14 & CHIPTYPE_2) # (!CHIPTYPE_2 & WE);
+PIN31_CHIP0 = A15 # CHIPTYPE_1;
+PIN31_CHIP1 = A15 # CHIPTYPE_2;
+PIN3_CHIP1 = (A14 & !CHIPTYPE_1) # (A15 & CHIPTYPE_1);
+PIN3_CHIP2 = (A14 & !CHIPTYPE_2) # (A15 & CHIPTYPE_2);

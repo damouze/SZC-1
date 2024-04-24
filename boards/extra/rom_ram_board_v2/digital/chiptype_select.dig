@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CHIPTYPE_1</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>5</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="140"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CHIPTYPE_2</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>6</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Text</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Description</string>
+          <string>Chiptype 0: AS6C4008-55PCN (SRAM)
+Chiptype 1: SST39SF040 (FLASHROM)</string>
+        </entry>
+      </elementAttributes>
+      <pos x="40" y="840"/>
+    </visualElement>
+    <visualElement>
+      <elementName>signal_mux.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CHIPMUX1</string>
+        </entry>
+      </elementAttributes>
+      <pos x="700" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>signal_mux.dig</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>CHIPMUX2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="700" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A14</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>2</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="640"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A15</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>3</string>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="700"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>~{WE}</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>4</string>
+        </entry>
+        <entry>
+          <string>InDefault</string>
+          <value v="1" z="false"/>
+        </entry>
+      </elementAttributes>
+      <pos x="200" y="760"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PIN3_CHIP1</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>12</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PIN3_CHIP2</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>15</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="280"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PIN29_CHIP0</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>13</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="160"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PIN29_CHIP1</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>16</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PIN31_CHIP0</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>14</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="200"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>PIN31_CHIP1</string>
+        </entry>
+        <entry>
+          <string>pinNumber</string>
+          <string>17</string>
+        </entry>
+      </elementAttributes>
+      <pos x="1480" y="360"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="620" y="320"/>
+      <p2 x="700" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="320"/>
+      <p2 x="1480" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="320"/>
+      <p2 x="1440" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="640"/>
+      <p2 x="600" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="620" y="160"/>
+      <p2 x="700" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="160"/>
+      <p2 x="1480" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="160"/>
+      <p2 x="1440" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="200"/>
+      <p2 x="580" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="1440" y="200"/>
+      <p2 x="1480" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="1440" y="360"/>
+      <p2 x="1480" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="140"/>
+      <p2 x="580" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="140"/>
+      <p2 x="700" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="140"/>
+      <p2 x="1460" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="300"/>
+      <p2 x="700" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="300"/>
+      <p2 x="1460" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="180"/>
+      <p2 x="700" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="340"/>
+      <p2 x="700" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="120"/>
+      <p2 x="700" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="120"/>
+      <p2 x="1480" y="120"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="280"/>
+      <p2 x="700" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="860" y="280"/>
+      <p2 x="1480" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="760"/>
+      <p2 x="640" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="200" y="700"/>
+      <p2 x="620" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="180"/>
+      <p2 x="640" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="640" y="340"/>
+      <p2 x="640" y="760"/>
+    </wire>
+    <wire>
+      <p1 x="1440" y="160"/>
+      <p2 x="1440" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="1440" y="320"/>
+      <p2 x="1440" y="360"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="120"/>
+      <p2 x="580" y="140"/>
+    </wire>
+    <wire>
+      <p1 x="580" y="200"/>
+      <p2 x="580" y="280"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="140"/>
+      <p2 x="1460" y="160"/>
+    </wire>
+    <wire>
+      <p1 x="1460" y="300"/>
+      <p2 x="1460" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="140"/>
+      <p2 x="600" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="600" y="300"/>
+      <p2 x="600" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="620" y="160"/>
+      <p2 x="620" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="620" y="320"/>
+      <p2 x="620" y="700"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

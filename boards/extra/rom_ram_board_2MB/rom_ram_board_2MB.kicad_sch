@@ -3655,7 +3655,7 @@
     (uuid ff9aa463-b1b7-49d1-9dcc-7dc9ad2c1fde)
   )
 
-  (text_box "A self-contained ROM/RAM board for the simple Z80 computer. \n\nIt has 512kB ROM and 1536kB RAM. Both ROM and RAM can be paged in and out of the Z80 addres space, by using the mapper registers at 0xFC-0xFF:\n\n0xFC	Mapper register for page 0 (0x0000 - 0x3fff)\n0xFD	Mapper register for page 1 (0x4000 - 0x7fff)\n0xFE	Mapper register for page 2 (0x8000 - 0xbfff)\n0xFF	Mapper register for page 3 (0xc000 - 0xffff)\n\nEach mapper register contains the segment number mapped into that 16kB page. Segments 0 through 31 are occupied by ROM and segments 32 through 127 are occupied by RAM."
+  (text_box "A self-contained ROM/RAM board for the simple Z80 computer. \n\nIt has 512kB ROM and 1536kB RAM. Both ROM and RAM can be paged in and out of the Z80 address space, by using the mapper registers at 0xFC-0xFF:\n\n0xFC	Mapper register for page 0 (0x0000 - 0x3fff)\n0xFD	Mapper register for page 1 (0x4000 - 0x7fff)\n0xFE	Mapper register for page 2 (0x8000 - 0xbfff)\n0xFF	Mapper register for page 3 (0xc000 - 0xffff)\n\nEach mapper register contains the segment number mapped into that 16kB page. Segments 0 through 31 are occupied by ROM and segments 32 through 127 are occupied by RAM."
     (at 352.425 210.82 0) (size 53.34 40.64)
     (stroke (width 0) (type default))
     (fill (type none))
