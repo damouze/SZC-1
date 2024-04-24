@@ -211,7 +211,7 @@
           <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="300" y="40"/>
+      <pos x="300" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -377,7 +377,7 @@
           <string>rd</string>
         </entry>
       </elementAttributes>
-      <pos x="620" y="60"/>
+      <pos x="620" y="80"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -396,7 +396,7 @@
     <visualElement>
       <elementName>Not</elementName>
       <elementAttributes/>
-      <pos x="440" y="60"/>
+      <pos x="440" y="80"/>
     </visualElement>
     <visualElement>
       <elementName>Driver</elementName>
@@ -458,7 +458,7 @@
     </wire>
     <wire>
       <p1 x="180" y="100"/>
-      <p2 x="220" y="100"/>
+      <p2 x="300" y="100"/>
     </wire>
     <wire>
       <p1 x="900" y="100"/>
@@ -479,10 +479,6 @@
     <wire>
       <p1 x="180" y="40"/>
       <p2 x="220" y="40"/>
-    </wire>
-    <wire>
-      <p1 x="220" y="40"/>
-      <p2 x="300" y="40"/>
     </wire>
     <wire>
       <p1 x="180" y="360"/>
@@ -513,8 +509,12 @@
       <p2 x="920" y="400"/>
     </wire>
     <wire>
-      <p1 x="220" y="80"/>
-      <p2 x="300" y="80"/>
+      <p1 x="380" y="80"/>
+      <p2 x="440" y="80"/>
+    </wire>
+    <wire>
+      <p1 x="480" y="80"/>
+      <p2 x="620" y="80"/>
     </wire>
     <wire>
       <p1 x="180" y="-20"/>
@@ -557,12 +557,8 @@
       <p2 x="920" y="220"/>
     </wire>
     <wire>
-      <p1 x="380" y="60"/>
-      <p2 x="440" y="60"/>
-    </wire>
-    <wire>
-      <p1 x="480" y="60"/>
-      <p2 x="620" y="60"/>
+      <p1 x="220" y="60"/>
+      <p2 x="300" y="60"/>
     </wire>
     <wire>
       <p1 x="820" y="-60"/>
@@ -581,12 +577,12 @@
       <p2 x="700" y="320"/>
     </wire>
     <wire>
-      <p1 x="220" y="80"/>
-      <p2 x="220" y="100"/>
-    </wire>
-    <wire>
       <p1 x="220" y="20"/>
       <p2 x="220" y="40"/>
+    </wire>
+    <wire>
+      <p1 x="220" y="40"/>
+      <p2 x="220" y="60"/>
     </wire>
   </wires>
   <measurementOrdering/>

@@ -15,4 +15,5 @@
   (lib (name "snapeda_oscillator")(type "KiCad")(uri "${KICAD_USER_LIB_DIR}/newlib/snapeda_oscillator.kicad_sym")(options "")(descr ""))
   (lib (name "ultralibrarian")(type "KiCad")(uri "${KICAD_USER_LIB_DIR}/newlib/ultralibrarian.kicad_sym")(options "")(descr ""))
   (lib (name "ownlib")(type "KiCad")(uri "${KICAD_USER_LIB_DIR}/ownlib/ownlib.kicad_sym")(options "")(descr ""))
+  (lib (name "own_rtc")(type "KiCad")(uri "${KICAD_USER_LIB_DIR}/newlib/own_rtc.kicad_sym")(options "")(descr ""))
 )
