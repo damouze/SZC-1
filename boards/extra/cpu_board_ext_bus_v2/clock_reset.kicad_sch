@@ -749,7 +749,7 @@
     (property "Value" "1N4148" (at 176.53 30.48 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal" (at 176.53 33.655 0)
+    (property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" (at 176.53 33.655 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 176.53 33.655 0)
