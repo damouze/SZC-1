@@ -69,7 +69,7 @@ should be delivered separately, for instance from the power board.
 - Serial I/O board
 - ROM/RAM board
 - The "even simpler Z80" board
-- Power board
+- Power board V2
 
 This will provide a basic Z80 system with serial I/O support. The serial I/O board should
 be configured to use /INT as its interrupt line and use 0x80 as its I/O base address.
@@ -84,7 +84,7 @@ Expansion Bus B is not used in this configuration.
 - Serial I/O board
 - ROM/RAM board v2
 - CPU board with expansion Connector C
-- Power board
+- Power board V2
 
 This will provide a slightly more advanced Z80 system with serial I/O support. The serial I/O
 board should be configured to use /INT as its interrupt line and use 0x80 as its I/O

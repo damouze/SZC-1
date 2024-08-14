@@ -1,0 +1,18 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+    <h1>C:\Users\dmouse\ownCloud\Projects\KiCAD\stackable_z80_computer\boards\power_board\power_board.kicad_sch</h1>
+    <p>30-8-2023 15:20:31</p>
+    <p>Eeschema 7.0.5</p>
+    <p><b>Component Count:</b>14</p>
+    <table>
+    <tr><th style='width:640px'>Ref</th><th>Qnty</th><th>Value</th><th>Part</th><th>Datasheet</th><th>Description</th><th>Vendor</th></tr><tr><td>D1</td><td>1</td><td>PWR_LED</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>D2</td><td>1</td><td>SB_LED</td><td>Device:LED</td><td>~</td><td>Light emitting diode</td><td></td></tr><tr><td>H1, H2, H3, H4</td><td>4</td><td>MountingHole_Pad</td><td>Mechanical:MountingHole_Pad</td><td>~</td><td>Mounting Hole with connection</td><td></td></tr><tr><td>J1</td><td>1</td><td>Exp. Conn. A</td><td>Connector_Generic:Conn_02x20_Odd_Even</td><td>~</td><td>Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J2</td><td>1</td><td>Exp. Conn. B</td><td>Connector_Generic:Conn_02x17_Odd_Even</td><td>~</td><td>Generic connector, double row, 02x17, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J3</td><td>1</td><td>Power</td><td>Connector_Generic:Conn_02x10_Top_Bottom</td><td>~</td><td>Generic connector, double row, 02x10, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J4</td><td>1</td><td>Front Panel Connector</td><td>ownlib:Conn_02x06_Odd_Even_keyed</td><td>~</td><td>Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>J5</td><td>1</td><td>ATX-20</td><td>Connector_Generic:Conn_02x10_Top_Bottom</td><td>~</td><td>Generic connector, double row, 02x10, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)</td><td></td></tr><tr><td>R1, R2, R3</td><td>3</td><td>470</td><td>Device:R</td><td>~</td><td>Resistor</td><td></td></tr><!--TABLEROW-->
+    </table>
+    </body>
+</html>
+    
