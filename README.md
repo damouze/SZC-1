@@ -101,24 +101,25 @@ The repository is laid out as follows:
 - boards/core contains the core boards
     - even_simpler_z80: the basic, bare bones Z80 board; just the CPU, some buffers/latches and a clock generator
 	- power_board: the power delivery board
-	- rom_ram_board: a board that provides 32kB of ROM and 96kB of RAM, able to be paged in and out as needed.
-	- serial_io_board: a board that provides a RS232 interface for outside communication.
+	- power_board_v2: and updated version of the power delivery board, with power-on circuitry onboard
+	- rom_ram_board: a board that provides 32kB of ROM and 96kB of RAM, able to be paged in and out as needed
+	- serial_io_board: a board that provides a RS232 interface for outside communication
 - boards/extra contains some extra board designs
-    - 8259_pic_board: 8259 Interrupt Controller Board for the SZC-1; requires Expansion Connector C.
-    - audio_board: SSG Audio Board for the SZC-1, providing SSG sound support.
-	- cpu_board_ext_bus_v2: new and improved CPU board providing Expansion Connector C and an on-board memory mapper.
-    - diag_board: a basic diagnostics board, providing a 2-digit 7-segment display accessible through I/O port 0xb8.
-	- ide_board: IDE Board for the SZC-1, inspired by the Beer IDE interface.
+    - 8259_pic_board: 8259 Interrupt Controller Board for the SZC-1; requires Expansion Connector C
+    - audio_board: SSG Audio Board for the SZC-1, providing SSG sound support
+	- cpu_board_ext_bus_v2: new and improved CPU board providing Expansion Connector C and an on-board memory mapper
+    - diag_board: a basic diagnostics board, providing a 2-digit 7-segment display accessible through I/O port 0xb8
+	- ide_board: IDE Board for the SZC-1, inspired by the Beer IDE interface
 	- mmu_board: a preliminary design for a Z80 MMU built around a ATF1502/1504 CPLD (*work in progress*)
-	- rom_ram_board_2MB: a board that provides 512kB of flash ROM and 1536kB of RAM, able to be paged in and out as needed.
-	- rom_ram_board_128kB_v2: another board that provides 32kB of EEPROM and 96kB of RAM; requires Expansion Connector C.
-	- rom_ram_board_v2: another board that provides 512kB of flash ROM and 1536kB of RAM; requires Expansion Connector C.
-	- simple_z80: the original Z80 board, CPU, buffers/latches and a LS74xx based IM2 interrupt controller.
+	- rom_ram_board_2MB: a board that provides 512kB of flash ROM and 1536kB of RAM, able to be paged in and out as needed
+	- rom_ram_board_128kB_v2: another board that provides 32kB of EEPROM and 96kB of RAM; requires Expansion Connector C
+	- rom_ram_board_v2: another board that provides 512kB of flash ROM and 1536kB of RAM; requires Expansion Connector C
+	- simple_z80: the original Z80 board, CPU, buffers/latches and a LS74xx based IM2 interrupt controller
 - boards/msx_compat contains boards to provide MSX compatibility (*work in progress*)
     - msx_rom_board: a board that houses to 32kB EEPROM sockets for MSX compatible ROMs (requires the ppi_slot_select_expanded board)
     - msx_rom_ram_board: a board with 512kB flash ROM and 1MB SRAM (requires the ppi_slot_select_expanded board)
-	- ppi_slot_select: a board that provides MSX compatible slot select registers as well as 16 GPIO pins.
-	- ppi_slot_select_expanded: as ppi_slot_select, but also contains an expanded slot select register.
+	- ppi_slot_select: a board that provides MSX compatible slot select registers as well as 16 GPIO pins
+	- ppi_slot_select_expanded: as ppi_slot_select, but also contains an expanded slot select register
 - digital contains experiments made in Digital to work out some concepts
 - doc: contains documentation and other reference material
 - ibom: interactive BOMs for the boards
