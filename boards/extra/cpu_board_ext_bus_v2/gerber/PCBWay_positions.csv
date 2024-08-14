@@ -1,0 +1,43 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,value,mount_type,place
+25.146,49.53,-90.0,top,C1,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+28.702,77.216,-90.0,top,C2,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+72.99,32.004,180.0,top,C3,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+59.886,32.004,180.0,top,C4,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+72.99,82.042,180.0,top,C5,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+46.782,32.004,180.0,top,C6,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+54.864,40.894,90.0,top,C7,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+20.34,32.258,0.0,top,C8,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+17.018,57.15,-90.0,top,C9,FG28X7R1H104KNT06,C_Disc_D5.0mm_W2.5mm_P2.50mm,0.1uF,tht,True
+12.192,37.465,90.0,top,CP1,ECA1HM100I,CP_Radial_D5.0mm_P2.50mm,10uF,tht,True
+19.812,37.465,90.0,top,CP2,KS104M050C07RR0VH2FP0,CP_Radial_D5.0mm_P2.50mm,0.1uF,tht,True
+3.556,49.276,90.0,top,D1,HLMP-1700,LED_D3.0mm,PWR_LED,tht,True
+20.574,44.704,180.0,top,D2,1N4148TA,D_DO-35_SOD27_P7.62mm_Horizontal,1N4148,tht,True
+3.525,91.725,0.0,top,H1,,MountingHole_3.2mm_M3_ISO7380_Pad,MountingHole_Pad,tht,True
+91.725,91.725,0.0,top,H2,,MountingHole_3.2mm_M3_ISO7380_Pad,MountingHole_Pad,tht,True
+91.725,3.525,0.0,top,H3,,MountingHole_3.2mm_M3_ISO7380_Pad,MountingHole_Pad,tht,True
+3.525,3.525,0.0,top,H4,,MountingHole_3.2mm_M3_ISO7380_Pad,MountingHole_Pad,tht,True
+90.17,78.105,0.0,top,J1,X9555WR-2x20-6TV01,IDC-Header_2x20_P2.54mm_Horizontal,Exp. Conn. A,tht,True
+37.465,90.17,90.0,top,J2,X9555WR-2x17-6TV01,IDC-Header_2x17_P2.54mm_Horizontal,Exp. Conn. B,tht,True
+5.207,17.145,180.0,top,J3,X9555WR-2x10-6TV01,IDC-Header_2x10_P2.54mm_Horizontal,Power,tht,True
+15.748,90.17,90.0,top,J4,75867-132LF,IDC-Header_2x04_P2.54mm_Horizontal,Exp. Conn. C,tht,True
+4.445,68.834,180.0,top,J5,PZ254R-11-02P,PinHeader_1x02_P2.54mm_Horizontal,EXT_CLK,tht,True
+4.445,56.642,180.0,top,J6,PZ254R-11-03P ,PinHeader_1x03_P2.54mm_Horizontal,CPU_CLK_SEL,tht,True
+4.445,78.247,180.0,top,J7,PZ254R-11-03P,PinHeader_1x03_P2.54mm_Horizontal,BUS_CLK_SEL,tht,True
+8.89,57.15,-90.0,top,R1,MFR2WSFTE73-1K,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,1k,tht,True
+12.954,57.15,-90.0,top,R2,MFR3WSFTE73-10K,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,10k,tht,True
+21.082,49.53,90.0,top,R3,MFR3WSFTE73-10K,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,10k,tht,True
+41.402,36.576,180.0,top,R4,MF0207FTE52-4K7,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,4.7k,tht,True
+84.836,52.705,-90.0,top,RN1,A09-472JP,R_Array_SIP9,4.7k,tht,True
+55.245,86.106,180.0,top,RN2,A09-472JP,R_Array_SIP9,4.7k,tht,True
+80.518,86.106,180.0,top,RN3,A09-472JP,R_Array_SIP9,4.7k,tht,True
+84.836,78.105,-90.0,top,RN4,A09-472JP,R_Array_SIP9,4.7k,tht,True
+80.01,78.105,-90.0,top,RN5,A05-472JP,R_Array_SIP5,4.7k,tht,True
+41.402,57.15,0.0,top,U1,DS1032-44SDKT1A,PLCC-44_THT-Socket,Z80CPPLC44,tht,True
+34.29,69.596,90.0,top,U2,1-2199298-6,DIP-20_W7.62mm_Socket,GAL16V8,tht,True
+52.266,26.178,0.0,top,U3,1-2199298-6,DIP-20_W7.62mm_Socket,74LS244,tht,True
+65.37,26.178,0.0,top,U4,1-2199298-6,DIP-20_W7.62mm_Socket,74LS244,tht,True
+65.37,77.216,0.0,top,U5,1-2199298-6,DIP-20_W7.62mm_Socket,74LS245,tht,True
+39.162,26.178,0.0,top,U6,1-2199298-6,DIP-20_W7.62mm_Socket,74LS244,tht,True
+58.674,40.894,90.0,top,U7,1-2199298-3,DIP-14_W7.62mm_Socket,74LS30,tht,True
+24.13,23.638,0.0,top,U8,DS1032-44SDKT1A,PLCC-44_THT-Socket,ATF1502AS-7JX44,tht,True
+13.422,77.216,0.0,top,X1,1-2199298-2,DIP-8_W7.62mm_Socket,INT_CLK,tht,True

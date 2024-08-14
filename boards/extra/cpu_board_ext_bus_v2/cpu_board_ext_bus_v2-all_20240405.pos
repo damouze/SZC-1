@@ -1,0 +1,44 @@
+### Footprint positions - created on 2024-05-04T13:16:49+0200 ###
+### Printed by KiCad version 8.0.2
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val              Package                                                PosX       PosY       Rot  Side
+C1        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        25.1460    49.5300  -90.0000  top
+C2        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        28.7020    77.2160  -90.0000  top
+C3        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        72.9900    32.0040  180.0000  top
+C4        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        59.8860    32.0040  180.0000  top
+C5        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        72.9900    82.0420  180.0000  top
+C6        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        46.7820    32.0040  180.0000  top
+C7        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        54.8640    40.8940   90.0000  top
+C8        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        20.3400    32.2580    0.0000  top
+C9        0.1uF            C_Disc_D5.0mm_W2.5mm_P2.50mm                        17.0180    57.1500  -90.0000  top
+CP1       10uF             CP_Radial_D5.0mm_P2.50mm                            12.1920    37.4650   90.0000  top
+CP2       0.1uF            CP_Radial_D5.0mm_P2.50mm                            19.8120    37.4650   90.0000  top
+D1        PWR_LED          LED_D3.0mm                                           3.5560    49.2760   90.0000  top
+D2        1N4148           D_DO-35_SOD27_P7.62mm_Horizontal                    20.5740    44.7040  180.0000  top
+J1        Exp._Conn._A     IDC-Header_2x20_P2.54mm_Horizontal                  90.1700    78.1050    0.0000  top
+J2        Exp._Conn._B     IDC-Header_2x17_P2.54mm_Horizontal                  37.4650    90.1700   90.0000  top
+J3        Power            IDC-Header_2x10_P2.54mm_Horizontal                   5.2070    17.1450  180.0000  top
+J4        Exp._Conn._C     IDC-Header_2x04_P2.54mm_Horizontal                  15.7480    90.1700   90.0000  top
+J5        EXT_CLK          PinHeader_1x02_P2.54mm_Horizontal                    4.4450    68.8340  180.0000  top
+J6        CPU_CLK_SEL      PinHeader_1x03_P2.54mm_Horizontal                    4.4450    56.6420  180.0000  top
+J7        BUS_CLK_SEL      PinHeader_1x03_P2.54mm_Horizontal                    4.4450    78.2470  180.0000  top
+R1        1k               R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal     8.8900    57.1500  -90.0000  top
+R2        10k              R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    12.9540    57.1500  -90.0000  top
+R3        10k              R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    21.0820    49.5300   90.0000  top
+R4        4.7k             R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal    41.4020    36.5760  180.0000  top
+RN1       4.7k             R_Array_SIP9                                        84.8360    52.7050  -90.0000  top
+RN2       4.7k             R_Array_SIP9                                        55.2450    86.1060  180.0000  top
+RN3       4.7k             R_Array_SIP9                                        80.5180    86.1060  180.0000  top
+RN4       4.7k             R_Array_SIP9                                        84.8360    78.1050  -90.0000  top
+RN5       4.7k             R_Array_SIP5                                        80.0100    78.1050  -90.0000  top
+U1        Z80CPPLC44       PLCC-44_THT-Socket                                  41.4020    57.1500    0.0000  top
+U2        GAL16V8          DIP-20_W7.62mm_Socket                               34.2900    69.5960   90.0000  top
+U3        74LS244          DIP-20_W7.62mm_Socket                               52.2660    26.1780    0.0000  top
+U4        74LS244          DIP-20_W7.62mm_Socket                               65.3700    26.1780    0.0000  top
+U5        74LS245          DIP-20_W7.62mm_Socket                               65.3700    77.2160    0.0000  top
+U6        74LS244          DIP-20_W7.62mm_Socket                               39.1620    26.1780    0.0000  top
+U7        74LS30           DIP-14_W7.62mm_Socket                               58.6740    40.8940   90.0000  top
+U8        ATF1502AS-7JX44  PLCC-44_THT-Socket                                  24.1300    23.6380    0.0000  top
+X1        INT_CLK          DIP-8_W7.62mm_Socket                                13.4220    77.2160    0.0000  top
+## End

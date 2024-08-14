@@ -1,0 +1,26 @@
+﻿designator,quantity,value,pack,mpn,mount_type
+"C1, C2, C3, C4, C5, C6, C7, C8, C9",9,0.1uF,C_Disc_D5.0mm_W2.5mm_P2.50mm,FG28X7R1H104KNT06,tht
+CP1,1,10uF,CP_Radial_D5.0mm_P2.50mm,ECA1HM100I,tht
+CP2,1,0.1uF,CP_Radial_D5.0mm_P2.50mm,KS104M050C07RR0VH2FP0,tht
+D1,1,PWR_LED,LED_D3.0mm,HLMP-1700,tht
+D2,1,1N4148,D_DO-35_SOD27_P7.62mm_Horizontal,1N4148TA,tht
+"H1, H2, H3, H4",4,MountingHole_Pad,MountingHole_3.2mm_M3_ISO7380_Pad,,tht
+J1,1,Exp. Conn. A,IDC-Header_2x20_P2.54mm_Horizontal,X9555WR-2x20-6TV01,tht
+J2,1,Exp. Conn. B,IDC-Header_2x17_P2.54mm_Horizontal,X9555WR-2x17-6TV01,tht
+J3,1,Power,IDC-Header_2x10_P2.54mm_Horizontal,X9555WR-2x10-6TV01,tht
+J4,1,Exp. Conn. C,IDC-Header_2x04_P2.54mm_Horizontal,75867-132LF,tht
+J5,1,EXT_CLK,PinHeader_1x02_P2.54mm_Horizontal,PZ254R-11-02P,tht
+J6,1,CPU_CLK_SEL,PinHeader_1x03_P2.54mm_Horizontal,PZ254R-11-03P ,tht
+J7,1,BUS_CLK_SEL,PinHeader_1x03_P2.54mm_Horizontal,PZ254R-11-03P,tht
+R1,1,1k,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,MFR2WSFTE73-1K,tht
+"R2, R3",2,10k,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,MFR3WSFTE73-10K,tht
+R4,1,4.7k,R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal,MF0207FTE52-4K7,tht
+"RN1, RN2, RN3, RN4",4,4.7k,R_Array_SIP9,A09-472JP,tht
+RN5,1,4.7k,R_Array_SIP5,A05-472JP,tht
+U1,1,Z80CPPLC44,PLCC-44_THT-Socket,DS1032-44SDKT1A,tht
+U2,1,GAL16V8,DIP-20_W7.62mm_Socket,1-2199298-6,tht
+"U3, U4, U6",3,74LS244,DIP-20_W7.62mm_Socket,1-2199298-6,tht
+U5,1,74LS245,DIP-20_W7.62mm_Socket,1-2199298-6,tht
+U7,1,74LS30,DIP-14_W7.62mm_Socket,1-2199298-3,tht
+U8,1,ATF1502AS-7JX44,PLCC-44_THT-Socket,DS1032-44SDKT1A,tht
+X1,1,INT_CLK,DIP-8_W7.62mm_Socket,1-2199298-2,tht

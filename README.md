@@ -92,7 +92,7 @@ base address. The ROM/RAM board should be configured for Bank 0.
 
 This system will have 512kB of Flash ROM and 1536kB of SRAM. Segments 0-31 will be ROM, 
 segments 32-127 will be RAM. Segments 128-255 will be available for add-on boards with
-its own ROM or RAM or which use memory mapped I/O. 
+their own ROM or RAM or which use memory mapped I/O. 
 
 ## Repository layout
  
