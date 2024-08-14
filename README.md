@@ -109,7 +109,7 @@ The repository is laid out as follows:
     - audio_board: SSG Audio Board for the SZC-1, providing SSG sound support
 	- cpu_board_ext_bus_v2: new and improved CPU board providing Expansion Connector C and an on-board memory mapper
     - diag_board: a basic diagnostics board, providing a 2-digit 7-segment display accessible through I/O port 0xb8
-	- ide_board: IDE Board for the SZC-1, inspired by the Beer IDE interface
+	- ide_board: IDE Board for the SZC-1, inspired by the Beer IDE interface for the MSX
 	- mmu_board: a preliminary design for a Z80 MMU built around a ATF1502/1504 CPLD (*work in progress*)
 	- rom_ram_board_2MB: a board that provides 512kB of flash ROM and 1536kB of RAM, able to be paged in and out as needed
 	- rom_ram_board_128kB_v2: another board that provides 32kB of EEPROM and 96kB of RAM; requires Expansion Connector C
