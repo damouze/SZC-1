@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 41,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -35,7 +35,6 @@
       4,
       5,
       6,
-      7,
       8,
       9,
       10,
@@ -69,6 +68,12 @@
     ],
     "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
+  },
+  "git": {
+    "repo_password": "",
+    "repo_type": "",
+    "repo_username": "",
+    "ssh_key": ""
   },
   "meta": {
     "filename": "rom_ram_board_v2.kicad_prl",
